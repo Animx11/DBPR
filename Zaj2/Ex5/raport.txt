@@ -1,0 +1,160 @@
+W zadaniu 1 pierwszych zajęć zapomiałem zamknąć pliku:
+==10882== LEAK SUMMARY:
+==10882==    definitely lost: 0 bytes in 0 blocks
+==10882==    indirectly lost: 0 bytes in 0 blocks
+==10882==      possibly lost: 0 bytes in 0 blocks
+==10882==    still reachable: 552 bytes in 1 blocks
+==10882==         suppressed: 0 bytes in 0 blocks
+==10882== 
+
+zostało to poprawione.
+
+W zadaniu 2 pierwszych zajęć nie zostały wykryte rzadne błędy.
+
+
+W zadaniu 5 pierwszych zajęć valgrind wykrywa mnóstwo błędów. Zamieszcze tutaj tylko summary, gdyż cały raport jest długi:
+
+==11459== HEAP SUMMARY:
+==11459==     in use at exit: 325,662 bytes in 172 blocks
+==11459==   total heap usage: 2,195 allocs, 2,023 frees, 3,589,360 bytes allocated
+==11459== 
+==11459== 520 bytes in 1 blocks are possibly lost in loss record 7 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x58A462: PyFrame_New (in /usr/bin/python3.6)
+==11459==    by 0x507BE1: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459== 
+==11459== 528 bytes in 1 blocks are possibly lost in loss record 9 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x58A462: PyFrame_New (in /usr/bin/python3.6)
+==11459==    by 0x507BE1: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x515695: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A634: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459== 
+==11459== 528 bytes in 1 blocks are possibly lost in loss record 10 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509E22: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x509757: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459== 
+==11459== 528 bytes in 1 blocks are possibly lost in loss record 11 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x58A462: PyFrame_New (in /usr/bin/python3.6)
+==11459==    by 0x508DD0: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+==11459==    by 0x5A4B70: _PyObject_FastCallDict (in /usr/bin/python3.6)
+==11459==    by 0x5A5BAD: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+==11459==    by 0x4F6E9C: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+==11459==    by 0x50DEBE: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x5161E8: ??? (in /usr/bin/python3.6)
+==11459==    by 0x566D9D: PyCFunction_Call (in /usr/bin/python3.6)
+==11459==    by 0x510F4F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459== 
+==11459== 536 bytes in 1 blocks are possibly lost in loss record 12 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x58A462: PyFrame_New (in /usr/bin/python3.6)
+==11459==    by 0x507BE1: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509041: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+==11459==    by 0x5A4B70: _PyObject_FastCallDict (in /usr/bin/python3.6)
+==11459==    by 0x549C61: ??? (in /usr/bin/python3.6)
+==11459==    by 0x551364: ??? (in /usr/bin/python3.6)
+==11459==    by 0x5A9CBB: _PyObject_FastCallKeywords (in /usr/bin/python3.6)
+==11459==    by 0x50A5C2: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50CD95: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x509757: ??? (in /usr/bin/python3.6)
+==11459== 
+==11459== 568 bytes in 1 blocks are possibly lost in loss record 19 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509E22: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x508E54: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+==11459==    by 0x5A4B70: _PyObject_FastCallDict (in /usr/bin/python3.6)
+==11459==    by 0x5A5BAD: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+==11459==    by 0x4F6E9C: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+==11459==    by 0x50DEBE: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x5161E8: ??? (in /usr/bin/python3.6)
+==11459== 
+==11459== 600 bytes in 1 blocks are possibly lost in loss record 62 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509E22: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x509757: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x588C8A: ??? (in /usr/bin/python3.6)
+==11459==    by 0x59FC4D: PyObject_Call (in /usr/bin/python3.6)
+==11459==    by 0x630A33: PyObject_CallMethod (in /usr/bin/python3.6)
+==11459== 
+==11459== 632 bytes in 1 blocks are possibly lost in loss record 63 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x58A462: PyFrame_New (in /usr/bin/python3.6)
+==11459==    by 0x507BE1: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50CD95: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x509757: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459== 
+==11459== 1,168 bytes in 2 blocks are possibly lost in loss record 103 of 134
+==11459==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11459==    by 0x5A41BA: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509E22: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50BFB3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+==11459==    by 0x507D63: ??? (in /usr/bin/python3.6)
+==11459==    by 0x509A8F: ??? (in /usr/bin/python3.6)
+==11459==    by 0x50A48C: ??? (in /usr/bin/python3.6)
+==11459== 
+==11459== LEAK SUMMARY:
+==11459==    definitely lost: 0 bytes in 0 blocks
+==11459==    indirectly lost: 0 bytes in 0 blocks
+==11459==      possibly lost: 5,608 bytes in 10 blocks
+==11459==    still reachable: 320,054 bytes in 162 blocks
+==11459==         suppressed: 0 bytes in 0 blocks
+==11459== Reachable blocks (those to which a pointer was found) are not shown.
+==11459== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==11459== 
+==11459== For counts of detected and suppressed errors, rerun with: -v
+==11459== Use --track-origins=yes to see where uninitialised values come from
+==11459== ERROR SUMMARY: 9009 errors from 158 contexts (suppressed: 0 from 0)
+
+

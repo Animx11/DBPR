@@ -1,0 +1,6 @@
+Liczba odczytywanych bajtów jest ustalana poprzez wartości INPUT_POOL_WORDS
+i OUTPUT_POOL_WORDS (ich wymnożenie) w kodzie /drivers/char/random.c
+
+W ciągu minuty można odczytać 67,4 MB
+
+Metoda pomiaru Timeout 60 cat /dev/random > plik.txt

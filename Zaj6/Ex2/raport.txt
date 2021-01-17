@@ -1,0 +1,3 @@
+W ciągu minuty odczytało 4,5 GB danych.
+
+AMD Ryzen 7 2700X 3,7 GHz

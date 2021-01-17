@@ -1,0 +1,1 @@
+Przy stworzeniu programu zwracającego konkretną wartość, powstaje krótki kod assemblerowy, gdzie głównie są kopiowane wartości między rejestrami.

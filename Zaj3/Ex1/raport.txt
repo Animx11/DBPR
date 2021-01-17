@@ -1,0 +1,3 @@
+Jedną z możliwości zabezpieczenia się przed takimi atakami, można wprowadzić stały czas odpowiedzi aplikacji.
+
+W obecnych czasach porównujemy hasz hasła, z haszem hasła który posiadamy w bazie. 

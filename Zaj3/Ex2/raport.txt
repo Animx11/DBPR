@@ -1,0 +1,19 @@
+// Program wykonywany na 2 wątkach
+
+real	0m0,152s
+user	0m0,288s
+sys	0m0,004s
+
+// Program z blokadami
+
+real	0m0,520s
+user	0m0,570s
+sys	0m0,466s
+
+// Program wykonywany na 1 wątku
+
+real	0m0,029s
+user	0m0,029s
+sys	0m0,000s
+
+Program działa najszybciej w wersji jednowątkowej. Używanie blokad znacząco wydłuża czas pracy programu.

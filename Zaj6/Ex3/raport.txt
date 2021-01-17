@@ -1,0 +1,1 @@
+Sprzętowe generowanie liczb losowych opierają swoją losowość zazwyczaj na losowych zjawiskach fizycznych takich jak np. szum termiczny, efekt fotoelektryczny, a nie jak standardowe metody generowania poprzez różne algorytmy. Poprzez wykorzystanie tych zjawisk, wyniki są całkowicie losowe, zakładając, że te zjawiska są niedeterministyczne.

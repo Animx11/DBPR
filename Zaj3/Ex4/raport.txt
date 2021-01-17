@@ -1,0 +1,8 @@
+Najbardziej narażone na tego typu ataki są oprogramowania mikroprocesorów oraz procesorów.
+
+Spectre - January 2018 - https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)
+Meltdown - January 2018 - https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)
+CacheBleed - 2016 - https://web.eecs.umich.edu/~genkin/cachebleed/index.html
+
+
+

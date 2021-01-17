@@ -1,0 +1,5 @@
+1) możliwość zrzutu pamięci: zaszyfrowanie wrażliwych danych, usunięcie kluczy oraz kasowanie z pamięci danych, kiedy one są już niepotrzebne.
+2) plik wymiany/pamięć wirtualna: zaszyfrowanie wrażliwych danych oraz usunięcie kluczy.
+3) hibernacja systemu: zaszyfrowanie wrażliwych danych oraz usunięcie kluczy.
+4) możliwość odczytu zawartości RAM po restarcie systemu: zaszyfrowanie wrażliwych danych, usunięcie kluczy oraz zwiększenie odświeżania pamięci RAM.
+5) wykonanie programu na maszynie wirtualnej/zdalnej/w chmurze: zaszyfrowanie wrażliwych danych oraz usunięcie kluczy, dostęp do maszyny wirtualnej tylko z konta z odpowiednimi uprawnieniami.

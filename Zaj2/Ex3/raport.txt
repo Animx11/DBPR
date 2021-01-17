@@ -1,0 +1,1 @@
+Wywołanie funkcji jednoargumentowej wygląda tak, że wartość naszego argumentu jest kopiowany do rejestru %edi, a następnie funkcja jest wywoływana poprzez polecenie call.

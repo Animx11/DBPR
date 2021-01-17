@@ -1,0 +1,5 @@
+int mlock(const void *addr, size_t len) - blokuje stron zmapowane w przestrzeni adresowej procesu wywołującego, zaczynając od adrr i kontynuując dla len bajtów.
+
+int mlockall(int flags) - blokuje wszystkie stron zmapowane w przestrzeni adresowej procesu wywołującego.
+
+int munlock(const void *addr, size_t len) oraz int munlockall(void) działają jak ich powyższe odpowiedniki, tylko, że służą do odblokowania.

@@ -1,0 +1,24 @@
+Jest to testowy plik txt z którego nasz program będzie się starał znaleźć słowo. 
+Wyjściem tego pliku powinno być tekst znalazłem.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu zostaje dodany tekst dla długości pliku, zostanie on powielony kilka razy.
+Tu jest kolejny test.
+A tu testowany produkt.
+test
+testowy test
+Test

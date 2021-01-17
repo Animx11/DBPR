@@ -1,0 +1,56 @@
+Rozmiary typów(w bajtach)
+
+Char size: 1
+Unsigned char size: 1
+Signed char size: 1
+Int size: 4
+Unsigned int size: 4
+Signed int size: 4
+Short size: 2
+Unsigned short size: 2
+Signed short size: 2
+Float size: 4
+Double size: 8
+Long double size: 16
+Signed long size: 8
+Unsigned long size: 8
+Long size: 8
+Long long size: 8
+Unsigned long long size: 8
+Signed long long size: 8
+Bool size: 1
+Wchar_t size: 4
+
+Program c1-1:
+
+0.
+
+Program bez żadnych zmian daję na wyjściu liczby od 12 do 21 oraz kończy się przerwaniem przez stack smashing detected.
+
+1.
+
+Zmiana typu w obu tablicach na long, double oraz long double, kończy się tak samo jak w przypadku podstawowej wersji programu za wyjątkiem, że na wyjściu otrzymujemy liczby od 10 do 19.
+
+Zmiana typu w pierwszej tablicy na long, double oraz long double, sprawia zmianę wyjścia programu na losowe cyfry.
+
+Zmiana typu w drugiej tablicy na long, double oraz long double daje różne wyniki. W każdym z przypadków działanie programu nie zostało zakończone stack smasching detected. w przypadku long wyjściem programu są duże cyfry, z czego ostatnia cyfra z każdym uruchomieniem programu się zmienia. W przypadku double otrzymujemy liczby w formacie naukowym, z czego ostatnia jak w przypadku long, jest inna z każdym nowym uruchomieniem. Double long daje nam na wyjściu "nan" oraz "-nan" oraz na przedostatnim miejscu liczbę w formacie naukowym, która z każdym uruchomieniem programu jest inna.
+
+2.
+
+Po zmianie rozmiaru tablicy na większy, wynik pierwotnego programu ulegnie zmianie, a gdy nadamy wartość 30 lub większą, to nie będzie problemu ze stack smasching.
+Przy podaniu wartości niższej niż pierwotna, program zacznie wyświetlać liczby tak samo jak pierwotny program, tylko, że zmieni się wartość początkowa od której będzie odliczał.
+
+3.
+
+Przy próbie optymalizacji -O0, kompilator poprawnie skompiluje program, a wynik wraz z stack smasching również zaistnieje.
+Przy próbie optymalizacji -O3, kompilator pokaże nam ostrzeżenie:
+
+c1-1.cpp: In function ‘int main()’:
+c1-1.cpp:9:30: warning: iteration 10 invokes undefined behavior [-Waggressive-loop-optimizations]
+  for(int i=0;i<30;i++) abc[i]=i;
+                        ~~~~~~^~
+c1-1.cpp:9:15: note: within this loop
+  for(int i=0;i<30;i++) abc[i]=i;
+              ~^~~
+
+Wynik programu będzie zawierał inne od pierwotnego wyjście oraz nie nastąpi stack smasching.
